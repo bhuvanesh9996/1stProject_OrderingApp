@@ -24,14 +24,15 @@ class _OrdState extends State<Ord> {
     setState(() {
       _tmp = 0;
     });
-
-    print('We have recieved your order.');
   }
 
   void _nxt() {
     setState(() {
       _tmp++;
     });
+  if (_tmp == 3) {
+    print('We have recieved your order.');
+   }
   }
 
   @override
